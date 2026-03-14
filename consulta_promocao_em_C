@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{   
+    int dia;
+    
+    printf("Digite o número do dia (1-7) para consultar as promoções: ");
+    scanf("%d", &dia);
+    
+    switch(dia) {
+        case 1:
+            printf("Frutas = 10%% de desconto");
+            break;
+        case 2:
+            printf("Verduras = 15%% de desconto");
+            break;
+        case 3:
+            printf("Bebidas = 25%% de desconto");
+            break;
+        case 4:
+            printf("Laticínios = 10%% de desconto");
+            break;
+        case 5:
+            printf("Carnes = 15%% de desconto");
+            break;
+        case 6:
+            printf("Produtos de Limpeza = 20%% de desconto");
+            break;
+        case 7:
+            printf("Produtos de Higiene pessoal = 25%% de desconto");
+            break;
+        default:
+            printf("Sem promoção");
+    }
+
+    return 0;
+}
