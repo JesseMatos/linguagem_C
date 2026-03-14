@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int tipo_investimento;
+    
+    printf("Selecione o número (1-5) do investimento escolhido: ");
+    scanf("%d", &tipo_investimento);
+    
+    switch(tipo_investimento) {
+        case 1:
+            printf("Poupança");
+            break;
+        case 2:
+            printf("CDB");
+            break;
+        case 3:
+            printf("Tesouro Direto");
+            break;
+        case 4:
+            printf("Fundos Imobiliários");
+            break;
+        case 5:
+            printf("Ações");
+            break;
+        default:
+            printf("Tipo desconhecido!");
+    }
+
+    return 0;
+}
